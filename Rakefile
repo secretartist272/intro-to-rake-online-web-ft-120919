@@ -10,10 +10,10 @@ desc 'outputs hello to the terminal'
   end
 end
 
-
-task :environment do
-  require_relative './config/environment'
-end
+namespace :db do
+  task :environment do
+    require_relative './config/environment'
+  end
 
 
   desc 'migrate changes to your database'
